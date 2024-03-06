@@ -17,20 +17,32 @@ Code optimization is the process of improving the efficiency, performance, and r
 
 ## How to Optimize Your Code
 
-There are a number of different ways to optimize your code, and the approach you take will depend on the language you're using, the platform you're targeting, and the specific goals you're hoping to achieve. In general, though, there are a few basic principles you can follow to optimize your code:
+There are several different ways to optimize your code, and the approach you take will depend on the language you're using, the platform you're targeting, and the specific goals you're hoping to achieve. In general, though, there are a few basic principles you can follow to optimize your code:
 
 ### Optimization Techniques
 
 - ### Use the right data types:
   Optimizing code performance relies on selecting appropriate data types to minimize conversions and enhance efficiency. Utilizing the smallest data type capable of accurately representing the data being worked with is advisable. For instance, using a `byte` data type instead of an `int` for numbers ≤ 255 conserves resources and improves code efficiency.
+
+| Data Type | Memory Usage |
+|-----------|--------------|
+| Byte      | 1 byte (8 bits) |
+| Boolean   | 1 byte (8 bits) |
+| Char      | 1 byte (8 bits) |
+| Integer (int) | 4 bytes (32 bits) |
+| Double    | 8 bytes (64 bits) |
+
 - ### Keep your code as simple as possible:
   One of the most important principles of optimizing code is to keep it as simple as possible. This means minimizing the amount of code required to achieve a desired outcome.
 - ### Cache frequently used data: 
   By caching data, you can avoid having to recalculate it every time it is needed, which can save a significant amount of time.
 - ### Avoid unnecessary I/O: 
-  Make sure that your code only reads from and writes to files when it absolutely needs to.
+  Make sure that your code only reads from and writes to files when it needs to.
 - ### Use the most efficient algorithms: 
-  Algorithms with lower time complexity will generally run faster and consume less resources.
+  Algorithms with lower time complexity will generally run faster and consume fewer resources.
+
+     ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/20017b74da7b512ad55d4c346fd5056bc5bd31c0/time-complexity-examples.png)
+
 
   - Linear Search (Before Optimization)
 In a linear search, you look through each element in the list one by one until you find the target.
@@ -75,7 +87,7 @@ In a binary search, you take advantage of the sorted nature of the list and repe
 - ### Resource Optimization
   Resource optimization on mobile platforms is crucial due to the limited hardware resources such as CPU, memory, and battery life. Let's consider an example of resource optimization in a mobile application that displays images downloaded from the internet, such as a social media app.
 
-     **Example :**
+     **Example:**
   
     **Image Loading and Caching (Before Optimization)**
 
@@ -109,7 +121,7 @@ In a binary search, you take advantage of the sorted nature of the list and repe
 - ### Dead Code Elimination
   Copy propagation often leads to making assignment statements into dead code.
   A variable is said to be dead if it is never used after its last definition.
-  In order to find the dead variables, a data flow analysis should be done.
+  To find the dead variables, a data flow analysis should be done.
 
     ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/dead_code.png)
 
