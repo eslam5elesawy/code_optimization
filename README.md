@@ -66,7 +66,7 @@ In a binary search, you take advantage of the sorted nature of the list and repe
    
       **Time Complexity:** O(log n)
 
-      ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/linear_ex.png)
+      ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/f36eb5357e6aeb23c17f16317f6b59be4d962322/binary_ex.png)
 
 
   In these diagrams, the arrow points to the current element being compared to the target. In linear search, you scan each element until you find the match, which can be slow for large lists. In binary search, you quickly narrow down the potential locations of the target by dividing the remaining search space in half with each step. This is much faster for large lists.
