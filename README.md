@@ -35,20 +35,27 @@ There are a number of different ways to optimize your code, and the approach you
   - Linear Search (Before Optimization)
 In a linear search, you look through each element in the list one by one until you find the target.
 
-    **Example Code:**
-    `linear_alg`
+  **Example Code:**
 
-    **Time Complexity:** O(n)
-    `linear_ex`
+![Code example](https://github.com/eslam5elesawy/code_optimization/blob/b26964b50b55d0f32300994b6f785c7d5df99fee/linear_alg.png)
+
+ **Time Complexity:** O(n)
+
+![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/linear_ex.png)
+
 
   - Binary Search (After Optimization)
 In a binary search, you take advantage of the sorted nature of the list and repeatedly divide the search interval in half.
 
-    **Example Code:**
-    `binary_alg`
+**Example Code:**
 
-    **Time Complexity:** O(log n)
-    `binaryr_ex`
+![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/binary_alg.png)
+
+   
+ **Time Complexity:** O(log n)
+
+ ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/linear_ex.png)
+
 
 In these diagrams, the arrow points to the current element being compared to the target. In linear search, you scan each element until you find the match, which can be slow for large lists. In binary search, you quickly narrow down the potential locations of the target by dividing the remaining search space in half with each step. This is much faster for large lists.
 
@@ -56,11 +63,12 @@ In these diagrams, the arrow points to the current element being compared to the
 Enhancing the performance of loops through techniques like loop unrolling, loop fusion, or loop tiling.
 Here's an example of a simple linear search without optimization:
 
-`loop_op`
+ ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/loop_op.png)
 
 Here's the same search, but optimized with a break statement:
 
-`loop_break`
+ ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/loop_break.png)
+
 
 By adding the break statement, the loop stops as soon as the number is found, potentially saving time and computation, especially if the number is located early in the array.
 
@@ -82,7 +90,7 @@ To optimize this, you could employ several strategies:
 - **Image Caching:** Cache downloaded images to disk or in memory. This way, if the user scrolls back or revisits an image, the app doesn't need to re-download it, saving network and CPU resources.
 - **Asynchronous Loading:** Load images asynchronously in the background to ensure a smooth and responsive user interface.
 
-`Resource_op`
+ ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/Resource_op.png)
 
 In this optimized scenario, the CachedNetworkImage widget from the Flutter package cached_network_image handles caching and asynchronous loading of images.
 
@@ -98,7 +106,7 @@ Copy propagation often leads to making assignment statements into dead code.
 A variable is said to be dead if it is never used after its last definition.
 In order to find the dead variables, a data flow analysis should be done.
 
-`dead_code`
+ ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/dead_code.png)
 
 In this example, there are several instances of dead code:
 
@@ -110,6 +118,6 @@ In this example, there are several instances of dead code:
 
 Dead code elimination would remove these parts of the code, resulting in a more efficient, maintainable, and potentially smaller program:
 
-`dead_code_opd`
+ ![Code example](https://github.com/eslam5elesawy/code_optimization/blob/afcbe4a7f14c0226caa6f498c2ccc272f0c8be2f/dead_code_opd.png)
 
 By eliminating the dead code, the program becomes clearer and easier to understand. Additionally, it may compile to a smaller binary, and there could be slight performance improvements since there's less code to load or execute.
