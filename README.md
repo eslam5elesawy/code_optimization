@@ -21,29 +21,34 @@ There are a number of different ways to optimize your code, and the approach you
 
 ### Optimization Techniques
 
-- **Use the right data types**: Optimizing code performance relies on selecting appropriate data types to minimize conversions and enhance efficiency. Utilizing the smallest data type capable of accurately representing the data being worked with is advisable. For instance, using a `byte` data type instead of an `int` for numbers ≤ 255 conserves resources and improves code efficiency.
-- **Keep your code as simple as possible**: One of the most important principles of optimizing code is to keep it as simple as possible. This means minimizing the amount of code required to achieve a desired outcome.
-- **Cache frequently used data**: By caching data, you can avoid having to recalculate it every time it is needed, which can save a significant amount of time.
-- **Avoid unnecessary I/O**: Make sure that your code only reads from and writes to files when it absolutely needs to.
-- **Use the most efficient algorithms**: Algorithms with lower time complexity will generally run faster and consume less resources.
+- ### Use the right data types:
+  Optimizing code performance relies on selecting appropriate data types to minimize conversions and enhance efficiency. Utilizing the smallest data type capable of accurately representing the data being worked with is advisable. For instance, using a `byte` data type instead of an `int` for numbers ≤ 255 conserves resources and improves code efficiency.
+- ### Keep your code as simple as possible:
+  One of the most important principles of optimizing code is to keep it as simple as possible. This means minimizing the amount of code required to achieve a desired outcome.
+- ### Cache frequently used data: 
+  By caching data, you can avoid having to recalculate it every time it is needed, which can save a significant amount of time.
+- ### Avoid unnecessary I/O: 
+  Make sure that your code only reads from and writes to files when it absolutely needs to.
+- ### Use the most efficient algorithms: 
+  Algorithms with lower time complexity will generally run faster and consume less resources.
 
-## Linear Search (Before Optimization)
+  - Linear Search (Before Optimization)
 In a linear search, you look through each element in the list one by one until you find the target.
 
-**Example Code:**
-`linear_alg`
+    **Example Code:**
+    `linear_alg`
 
-**Time Complexity:** O(n)
-`linear_ex`
+    **Time Complexity:** O(n)
+    `linear_ex`
 
-## Binary Search (After Optimization)
+  - Binary Search (After Optimization)
 In a binary search, you take advantage of the sorted nature of the list and repeatedly divide the search interval in half.
 
-**Example Code:**
-`binary_alg`
+    **Example Code:**
+    `binary_alg`
 
-**Time Complexity:** O(log n)
-`binaryr_ex`
+    **Time Complexity:** O(log n)
+    `binaryr_ex`
 
 In these diagrams, the arrow points to the current element being compared to the target. In linear search, you scan each element until you find the match, which can be slow for large lists. In binary search, you quickly narrow down the potential locations of the target by dividing the remaining search space in half with each step. This is much faster for large lists.
 
