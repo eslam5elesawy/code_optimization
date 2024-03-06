@@ -77,15 +77,17 @@ In a binary search, you take advantage of the sorted nature of the list and repe
 
      **Example :**
   
-  # Image Loading and Caching (Before Optimization)
+    **Image Loading and Caching (Before Optimization)**
+
     Suppose the app directly downloads full-resolution images as users scroll through their feed. This approach can be very resource-intensive for several reasons:
     - **Network Usage:** Downloading full-resolution images uses a lot of data, which can be slow and costly for the user.
     - **Memory Usage:** High-resolution images consume a lot of memory when loaded into RAM.
     - **CPU Usage:** Decoding large images can be CPU-intensive, causing the app to lag.
     - **Battery Life:** High network, memory, and CPU usage drain the battery more quickly.
 
-  # Image Loading and Caching (After Optimization)
-     To optimize this, you could employ several strategies:
+    **Image Loading and Caching (After Optimization)**
+
+    To optimize this, you could employ several strategies:
      - **Downsampling:** Download lower-resolution versions of images when a high resolution is unnecessary (e.g., when displaying thumbnail previews).
      - **Lazy Loading:** Only load images when they are about to appear on the screen rather than preloading images that the user may never scroll to.
      - **Image Caching:** Cache downloaded images to disk or in memory. This way, if the user scrolls back or revisits an image, the app doesn't need to re-download it, saving network and CPU resources.
